@@ -3,6 +3,7 @@ import Clock from "./Clock";
 import ComponentProps from "./ComponentProps";
 import Comment from "./Comment";
 import Tick from "./Tick";
+import ClockClass from "./ClockClass";
 const App = (props) => {
   const comment = {
     date: new Date(),
@@ -22,8 +23,9 @@ const App = (props) => {
         author={comment.author}
       /> */}
       {/* <ComponentProps name="Components Props" /> */}
-      <Tick />
-      <Clock date={new Date()} />
+      {/* <Tick /> */}
+      <ClockClass />
+      {/* <Clock /> */}
     </div>
   );
 };
