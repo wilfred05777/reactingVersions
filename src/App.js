@@ -2,6 +2,7 @@ import React from "react";
 import Clock from "./Clock";
 import ComponentProps from "./ComponentProps";
 import Comment from "./Comment";
+import Tick from "./Tick";
 const App = (props) => {
   const comment = {
     date: new Date(),
@@ -14,13 +15,14 @@ const App = (props) => {
 
   return (
     <div>
-      <h1> Hello, World!</h1>
-      <Comment
+      {/* <h1> Hello, World!</h1> */}
+      {/* <Comment
         date={comment.date}
         text={comment.text}
         author={comment.author}
-      />
-      <ComponentProps name="Components Props" />
+      /> */}
+      {/* <ComponentProps name="Components Props" /> */}
+      <Tick />
       <Clock />
     </div>
   );
