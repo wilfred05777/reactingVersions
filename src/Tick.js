@@ -1,6 +1,7 @@
 import React from "react";
 
 // https://reactjs.org/docs/state-and-lifecycle.html
+// Adding Local State to a Class
 
 const Tick = (props) => {
   return (
