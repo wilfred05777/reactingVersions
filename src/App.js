@@ -23,7 +23,7 @@ const App = (props) => {
       /> */}
       {/* <ComponentProps name="Components Props" /> */}
       <Tick />
-      <Clock />
+      <Clock date={new Date()} />
     </div>
   );
 };
