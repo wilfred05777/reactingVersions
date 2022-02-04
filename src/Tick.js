@@ -1,5 +1,7 @@
 import React from "react";
 
+// https://reactjs.org/docs/state-and-lifecycle.html
+
 const Tick = (props) => {
   return (
     <div>
