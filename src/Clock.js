@@ -6,14 +6,13 @@ const Clock = () => {
     setDate(new Date());
   };
 
-  //   const refreshClock = () => {
-  //     setDate(new Date());
-  //   };
-
   useEffect(() => {
     setInterval(() => {
       const timerId = setInterval(refreshClock, 1000);
-      return function cleanup() {
+      // return function cleanup() {
+      //   clearInterval(timerId);
+      // };
+      return (cleanup) => {
         clearInterval(timerId);
       };
     });
