@@ -6,10 +6,10 @@ const FormForm = () => {
   //       e.preventDefault();
   //     }
   //   }
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log("You Click Submit");
-  }
+  };
   return (
     <div>
       <div>FORM FORM</div>

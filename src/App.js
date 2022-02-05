@@ -8,6 +8,7 @@ import FormToggle from "./Components/Form/Form";
 import FormForm from "./Components/Form/FormForm";
 import Toggle from "./Components/Toggle/Toggle";
 import LoggingButton from "./Components/LoggingButton/LoggingButton";
+import LoginControl from "./Components/ConditionalRendering/LoginControl";
 
 const App = (props) => {
   const comment = {
@@ -30,15 +31,17 @@ const App = (props) => {
 
       {/* <ComponentProps name="Components Props" /> */}
       {/* <Tick /> */}
-      <Clock />
+      {/* <Clock /> */}
       {/* <ClockClass /> */}
-      <FormToggle />
+      {/* <FormToggle />
 
       <FormForm />
 
-      <Toggle />
+      <Toggle /> */}
 
-      <LoggingButton />
+      {/* <LoggingButton /> */}
+
+      <LoginControl />
     </div>
   );
 };
