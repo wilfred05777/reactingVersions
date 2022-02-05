@@ -5,6 +5,9 @@ import Comment from "./Comment";
 import Tick from "./Tick";
 import ClockClass from "./ClockClass";
 import FormToggle from "./Components/Form/Form";
+import FormForm from "./Components/Form/FormForm";
+import Toggle from "./Components/Toggle/Toggle";
+import LoggingButton from "./Components/LoggingButton/LoggingButton";
 
 const App = (props) => {
   const comment = {
@@ -30,6 +33,12 @@ const App = (props) => {
       <Clock />
       {/* <ClockClass /> */}
       <FormToggle />
+
+      <FormForm />
+
+      <Toggle />
+
+      <LoggingButton />
     </div>
   );
 };
