@@ -5,17 +5,33 @@ class ClockClass extends React.Component {
     super(props);
     this.state = { date: new Date() };
   }
-  componentDidCatch() {
-    this.timerID = setInterval(() => this.tick());
+
+  componentDidMount() {
+    this.timerID = setInterval(() => this.tick(), 1000);
+
+    // fetchPosts().then((response) => {
+    //   this.setState({
+    //     posts: response.posts,
+    //   });
+    // });
+
+    // fetchComments().then((response) => {
+    //   this.setState({
+    //     comments: response.comments,
+    //   });
+    // });
   }
+
   componentWillUnmount() {
     clearInterval(this.timerID);
   }
+
   tick() {
     this.setState({
       date: new Date(),
     });
   }
+
   render() {
     return (
       <div>

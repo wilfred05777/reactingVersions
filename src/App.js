@@ -4,6 +4,7 @@ import ComponentProps from "./ComponentProps";
 import Comment from "./Comment";
 import Tick from "./Tick";
 import ClockClass from "./ClockClass";
+
 const App = (props) => {
   const comment = {
     date: new Date(),
@@ -22,12 +23,42 @@ const App = (props) => {
         text={comment.text}
         author={comment.author}
       /> */}
+
       {/* <ComponentProps name="Components Props" /> */}
       {/* <Tick /> */}
-      <ClockClass />
       {/* <Clock /> */}
+      {/* <ClockClass /> */}
     </div>
   );
 };
+
+// class App extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = { date: new Date() };
+//   }
+
+//   componentDidMount() {
+//     this.timerID = setInterval(() => this.tick(), 1000);
+//   }
+//   componentWillUnmount() {
+//     clearInterval(this.timerID);
+//   }
+
+//   tick() {
+//     this.setState({
+//       date: new Date(),
+//     });
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <div>
+//           <h2>It is {this.state.date.toLocaleTimeString()}</h2>
+//         </div>
+//       </div>
+//     );
+//   }
+// }
 
 export default App;
