@@ -4,6 +4,7 @@ import ComponentProps from "./ComponentProps";
 import Comment from "./Comment";
 import Tick from "./Tick";
 import ClockClass from "./ClockClass";
+import FormToggle from "./Components/Form/Form";
 
 const App = (props) => {
   const comment = {
@@ -26,8 +27,9 @@ const App = (props) => {
 
       {/* <ComponentProps name="Components Props" /> */}
       {/* <Tick /> */}
-      {/* <Clock /> */}
+      <Clock />
       {/* <ClockClass /> */}
+      <FormToggle />
     </div>
   );
 };
