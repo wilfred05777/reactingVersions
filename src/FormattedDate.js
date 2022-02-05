@@ -1,10 +1,9 @@
 import React from "react";
-
+import Formatted_Date from "./formatted_date";
 // const formatted_Date = (props) => {
 //   return <h2>It is {props.date.toLocaleTimeString()}</h2>;
 // };
 
-import Formatted_Date from "./formatted_date";
 class FormattedDate extends React.Component {
   constructor(props) {
     super(props);
