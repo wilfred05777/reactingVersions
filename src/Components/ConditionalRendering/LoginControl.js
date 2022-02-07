@@ -1,5 +1,5 @@
 import React from "react";
-import { LoginButton, LogoutButton, Greeting } from "./ConditionalRendering";
+// import { LoginButton, LogoutButton, Greeting } from "./ConditionalRendering";
 
 class LoginControl extends React.Component {
   constructor(props) {
@@ -18,13 +18,13 @@ class LoginControl extends React.Component {
   }
 
   render() {
-    const isLoggedIn = this.state.isLoggedIn;
-    let button;
-    if (isLoggedIn) {
-      button = <LogoutButton onClick={this.handleLogoutClick} />;
-    } else {
-      button = <LoginButton onClick={this.handleLoginClick} />;
-    }
+    // const isLoggedIn = this.state.isLoggedIn;
+    // let button;
+    // if (isLoggedIn) {
+    //   button = <LogoutButton onClick={this.handleLogoutClick} />;
+    // } else {
+    //   button = <LoginButton onClick={this.handleLoginClick} />;
+    // }
     return (
       <div>
         <div></div>

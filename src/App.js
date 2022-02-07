@@ -9,6 +9,8 @@ import FormForm from "./Components/Form/FormForm";
 import Toggle from "./Components/Toggle/Toggle";
 import LoggingButton from "./Components/LoggingButton/LoggingButton";
 import LoginControl from "./Components/ConditionalRendering/LoginControl";
+import NumberListsAndKeys from "./Components/Lists&Keys/ListsAndKeys";
+import BlogPost from "./Components/Lists&Keys/BlogPost";
 
 const App = (props) => {
   const comment = {
@@ -20,6 +22,16 @@ const App = (props) => {
     },
   };
 
+  const numbers = [1, 2, 3, 4, 5];
+
+  const posts = [
+    { id: 1, title: "Hello World", content: "Welcome to learning React!" },
+    {
+      id: 2,
+      title: "Installation",
+      content: "You can install React from npm.",
+    },
+  ];
   return (
     <div>
       {/* <h1> Hello, World!</h1> */}
@@ -33,15 +45,19 @@ const App = (props) => {
       {/* <Tick /> */}
       {/* <Clock /> */}
       {/* <ClockClass /> */}
-      {/* <FormToggle />
+      {/* <FormToggle /> */}
 
-      <FormForm />
+      {/* <FormForm /> */}
 
-      <Toggle /> */}
+      {/* <Toggle /> */}
 
       {/* <LoggingButton /> */}
 
-      <LoginControl />
+      {/* <LoginControl /> */}
+
+      <NumberListsAndKeys numbers={numbers} />
+
+      <BlogPost posts={posts} />
     </div>
   );
 };
